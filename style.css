@@ -1,0 +1,23 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+}
+/* body{
+    min-height: 100vh;
+    min-width: 100%;
+} */
+.container{
+    background-color: var(--white);
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 20px;
+    height: 100vh;
+}
+figure{
+    height: 75vh;
+    padding: 20px;
+}
+figure img{
+    width: clamp(200px, 78vw, 100%);
+    background-size: cover;
+    background-position: center;
+}

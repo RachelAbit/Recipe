@@ -24,15 +24,17 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
     padding: 23px;
     background-color: var(--white);
 }
 
 figure img{
     width: 100%;
-    height: clamp(90px, 40vw, 500px);
+    height: clamp(100px, 40vw, 500px);
     object-fit: cover;
+}
+.main-content{
+    margin: auto;
 }
 
 h1.title{
@@ -44,4 +46,27 @@ p.text1{
     font-size: 19px;
     font-family: Outfit;
     line-height: 1.5;
+    color: var(--wenged-brown);
+}
+.preparation{
+    background-color: var(--rose-white);
+    padding: 20px;
+    font-family: Outfit;
+}
+.preparation > h2{
+    color: var(--dark-raspberry);
+}
+.preparation > ul, .ingredients > ul{
+    line-height: 2;
+    font-family: Outfit;
+}
+.preparation > ul li, .ingredients > ul li{
+    color: var(--dark-charchoal);
+}
+.ingredients h1{
+    font-family: Young serif;
+    color: var(--nutmeg);
+}
+.text2{
+    color: var(--wenged-brown);
 }

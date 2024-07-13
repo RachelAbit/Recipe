@@ -20,10 +20,10 @@ body{
 
 .container{
     width: clamp(200px, 70vw, 800px);
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 20px;
     padding: 23px;
     background-color: var(--white);
 }
@@ -38,12 +38,12 @@ figure img{
 }
 
 h1.title{
-    font-size: 36px;
+    font-size: clamp(24px, 3vw, 36px);
     font-family: Young serif;
     color: var(--dark-charchoal);
 }
 p.text1{
-    font-size: 19px;
+    font-size: clamp(14px, 2vw, 19px);
     font-family: Outfit;
     line-height: 1.5;
     color: var(--wenged-brown);
@@ -55,18 +55,62 @@ p.text1{
 }
 .preparation > h2{
     color: var(--dark-raspberry);
+    font-size: clamp(16px, 2vw, 20px);
 }
 .preparation > ul, .ingredients > ul{
     line-height: 2;
     font-family: Outfit;
+    font-size: clamp(14px, 2vw, 16px);
 }
 .preparation > ul li, .ingredients > ul li{
     color: var(--dark-charchoal);
 }
-.ingredients h1{
+.ingredients h1, .instructions h1{
     font-family: Young serif;
     color: var(--nutmeg);
+    font-size: clamp(24px, 3vw, 36px);
 }
 .text2{
     color: var(--wenged-brown);
+    font-size: clamp(14px, 2vw, 16px);
+}
+.instructions ol {
+    font-family: Outfit;
+}
+.instructions ol li{
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+.text3{
+    color: var(--dark-charchoal);
+    line-height: 2.5;
+}
+.details{
+    color: var(--wenged-brown);
+    font-weight: 400;
+    font-size: clamp(15px, 2vw, 16px);
+}
+.nutrition h1{
+    font-family: Young serif;
+    font-size: clamp(24px, 3vw, 36px);
+    color: var(--nutmeg);
+}
+.nutrition p{
+    font-family: Outfit;
+    color: var(--wenged-brown);
+    font-size: clamp(15px, 2vw, 16px);
+}
+table{
+    width: 100%;
+    color: var(--wenged-brown);
+    font-family: Outfit;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+.amount{
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+td{
+    font-size: clamp(12px, 2vw, 16px);
 }

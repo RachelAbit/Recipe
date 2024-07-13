@@ -8,7 +8,6 @@
     --eggshell: hsl(30, 54%, 90%);
     --rose-white: hsl(330, 100%, 98%);
 }
-
 body{
     background-color: var(--eggshell);
     display: flex;
@@ -17,7 +16,6 @@ body{
     align-items: center;
     min-height: 100vh;
 }
-
 .container{
     width: clamp(200px, 70vw, 800px);
     display: flex;
@@ -27,7 +25,6 @@ body{
     padding: 23px;
     background-color: var(--white);
 }
-
 figure img{
     width: 100%;
     height: clamp(100px, 40vw, 500px);
@@ -36,7 +33,6 @@ figure img{
 .main-content{
     margin: auto;
 }
-
 h1.title{
     font-size: clamp(24px, 3vw, 36px);
     font-family: Young serif;
